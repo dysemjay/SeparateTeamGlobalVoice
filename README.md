@@ -21,7 +21,7 @@ If alltalk is off, +voicealt should cause everyone to be able to hear you.
 +voiceteam should cause only team members to be able to hear you.
 
 +voiceglobal should cause everyone to be able to hear you.
-
+<br /><br />
 
 The general intended behavior of these commands is that if one is turned "on", while another has already been turned "on", then the final result would be equivalent to, turning the former command off, and then turning the latter command on.
 
@@ -30,7 +30,7 @@ An example is: entering "+voicealt", then entering "+voiceteam". The result woul
 Each of the "off" commands (-voicealt, -voiceglobal, -voiceteam), should only work with its respective, "on" command. (+voicealt, +voiceglobal, +voiceteam). For example: entering "+voicealt", then "-voiceteam", should not change the current behavior, of "+voicealt".
 
 Sample binds may be found zipped with this release.
-
+<br /><br />
 
 Other features:
 
@@ -42,15 +42,15 @@ The plugin should detect the change of the sv_alltalk ConVar, and automatically 
 
 - Detecting team changes.
 The plugin should automatically recalculate which players may hear each other, on team change, if necessary.
-
+<br /><br />
 
 Compiling instructions:
 
 Ensure that the following directory structure is present:
 
-./SeparateTeamGlobalVoice/actions.sp
-./SeparateTeamGlobalVoice/interface.sp
-./SeparateTeamGlobalVoice.sp
+./SeparateTeamGlobalVoice/actions.sp<br />
+./SeparateTeamGlobalVoice/interface.sp<br />
+./SeparateTeamGlobalVoice.sp<br />
 
 Note that the name of SeparateTeamGlobalVoice.sp may be changed. This should be already be present in the included zip file, so you may simply, extract to the scripting directory of your sourcemod installation, and do the following in Windows:
 ```
